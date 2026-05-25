@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - BTS</title>
+    <title>Portfolio - Épreuve BTS SIO (SISR)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
     <div class="logo">Mon Portfolio</div>
     <nav>
@@ -16,69 +17,111 @@
             <li><a href="etudes.html">Études</a></li>
             <li><a href="experience.html">Expérience Pro</a></li>
             <li><a href="projets.html">Projets</a></li>
-            <li><a href="epreuve_bts.html"style="color:white;font-weight:700">Épreuve BTS</a></li>
+            <li><a href="epreuve_bts.html" style="color:white;font-weight:700">Épreuve BTS</a></li>
             <li><a href="veille.html">Veille</a></li>
         </ul>
     </nav>
 </header>
 
 <div class="section">
-    <h2 class="section-title">Épreuve BTS</h2>
-    <p class="section-subtitle">Situations professionnelles significatives (SPS) pour l'épreuve E4/E5/E6</p>
+    <h2 class="section-title">Épreuve BTS SIO (SISR)</h2>
+    <p class="section-subtitle">Cette page présente les travaux et documents officiels réalisés durant mes deux années de formation.</p>
 
+    <!-- ===== E5 – Réalisations professionnelles ===== -->
     <div class="info-block">
-        <h3>Présentation de l'épreuve</h3>
+        <h3>E5 – Réalisations professionnelles</h3>
         <p>
-            L'épreuve professionnelle du BTS SIO consiste à présenter des situations professionnelles
-            significatives réalisées en entreprise ou en milieu scolaire. Cette page regroupe l'ensemble
-            des éléments nécessaires à la préparation et à la présentation de ces épreuves.
+            Cette section regroupe l'ensemble des projets que j'ai menés durant tout mon cursus de BTS.
+            Ces travaux témoignent de ma progression et de la diversité des compétences techniques acquises.
         </p>
     </div>
 
-    <div class="cards">
+    <div class="info-block" style="margin-top:20px;">
+        <h3>📂 Tableau de synthèse</h3>
+        <p style="margin-bottom:20px;">
+            Le tableau de synthèse récapitule l'ensemble des situations professionnelles significatives (SPS)
+            réalisées durant la formation, en lien avec le référentiel du BTS SIO option SISR.
+        </p>
+        <a href="document/Tableau_de_synthese_BOUARD.pdf" target="_blank" class="btn">📂 Accéder au Tableau de Synthèse</a>
+    </div>
+
+    <!-- ===== E6 – Projets personnels ===== -->
+    <div class="info-block" style="margin-top:40px;">
+        <h3>E6 – Projets personnels</h3>
+        <p>
+            Dans le cadre de mon apprentissage, j'ai réalisé en autonomie deux projets personnels majeurs.
+            Ils illustrent ma capacité à concevoir et mettre en œuvre des solutions techniques répondant
+            à des problématiques de haute disponibilité et de déploiement.
+        </p>
+    </div>
+
+    <div class="cards" style="margin-top:25px;">
+
+        <!-- Projet E6 – 1 -->
         <div class="card">
-            <div class="date">Situation 1</div>
-            <h3>Titre de la situation professionnelle</h3>
-            <p>Description de la mission réalisée, du contexte, des compétences mobilisées et des résultats obtenus lors de cette situation professionnelle.</p>
-            <span class="tag">E4</span>
-            <span class="tag">Développement</span>
+            <div class="date">Projet E6 – 1</div>
+            <h3>Mise en place d'un Intranet en Haute Disponibilité</h3>
+            <p>Réalisation d'une infrastructure pour un site intranet statique garantissant une continuité de service maximale.</p>
+            <ul style="margin:15px 0 15px 20px; color:#666; font-size:0.9rem; line-height:1.9;">
+                <li><strong>Technologie :</strong> Utilisation de Docker pour la conteneurisation.</li>
+                <li><strong>Architecture :</strong> Redondance sur trois sites tournant en boucle avec un HAProxy pour la répartition de charge.</li>
+                <li><strong>Gestion des données :</strong> Chaque machine dispose de son propre dossier de stockage. Les modifications effectuées en local sont automatiquement répercutées sur les trois instances du site.</li>
+            </ul>
+            <span class="tag">HAProxy</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Haute Disponibilité</span>
+            <div style="margin-top:18px;">
+                <a href="document/E6 2026 – BOUARD – 1.pdf" target="_blank" class="btn" style="font-size:0.85rem; padding:9px 18px;">📂 Accéder au Dossier E6 - 1</a>
+            </div>
         </div>
 
+        <!-- Projet E6 – 2 -->
         <div class="card">
-            <div class="date">Situation 2</div>
-            <h3>Titre de la situation professionnelle</h3>
-            <p>Description de la mission réalisée, du contexte, des compétences mobilisées et des résultats obtenus lors de cette situation professionnelle.</p>
-            <span class="tag">E4</span>
-            <span class="tag">Réseau</span>
+            <div class="date">Projet E6 – 2</div>
+            <h3>Déploiement d'images via Serveur FOG</h3>
+            <p>Conception d'une solution automatisée pour la gestion d'un parc informatique.</p>
+            <ul style="margin:15px 0 15px 20px; color:#666; font-size:0.9rem; line-height:1.9;">
+                <li><strong>Objectif :</strong> Déploiement rapide d'images systèmes pour une salle de formation.</li>
+                <li><strong>Solution :</strong> Installation et paramétrage d'un serveur FOG pour automatiser le clonage des postes.</li>
+            </ul>
+            <span class="tag">FOG Server</span>
+            <span class="tag">Déploiement</span>
+            <span class="tag">Parc informatique</span>
+            <div style="margin-top:18px;">
+                <a href="document/E6 2026 – BOUARD – 2.pdf" target="_blank" class="btn" style="font-size:0.85rem; padding:9px 18px;">📂 Accéder au Dossier E6 - 2</a>
+            </div>
         </div>
 
-        <div class="card">
-            <div class="date">Situation 3</div>
-            <h3>Titre de la situation professionnelle</h3>
-            <p>Description de la mission réalisée, du contexte, des compétences mobilisées et des résultats obtenus lors de cette situation professionnelle.</p>
-            <span class="tag">E6</span>
-            <span class="tag">Projet</span>
-        </div>
+    </div>
 
-        <div class="card">
-            <div class="date">Situation 4</div>
-            <h3>Titre de la situation professionnelle</h3>
-            <p>Ajoutez autant de situations que nécessaire pour couvrir l'ensemble des compétences du référentiel.</p>
-            <span class="tag">E5</span>
-            <span class="tag">Cybersécurité</span>
+    <!-- ===== Attestations de stage ===== -->
+    <div class="info-block" style="margin-top:40px;">
+        <h3>Attestations de stage</h3>
+        <p style="margin-bottom:25px;">Périodes d'immersion professionnelle en entreprise :</p>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+            <div style="flex:1; min-width:220px; background:#f9f9f9; border-radius:8px; padding:22px; text-align:center; border:1px solid #eee;">
+                <div style="font-size:2rem; margin-bottom:8px;">📄</div>
+                <strong style="display:block; margin-bottom:6px; color:#1a1a2e;">Stage de 1ère année</strong>
+                <p style="font-size:0.85rem; color:#888; margin-bottom:14px;">Convention et attestation de stage SIO1</p>
+                <a href="document/Conventions Stage SIO1.pdf" target="_blank" class="btn" style="font-size:0.82rem; padding:8px 16px;">📄 Voir l'attestation</a>
+            </div>
+
+            <div style="flex:1; min-width:220px; background:#f9f9f9; border-radius:8px; padding:22px; text-align:center; border:1px solid #eee;">
+                <div style="font-size:2rem; margin-bottom:8px;">📄</div>
+                <strong style="display:block; margin-bottom:6px; color:#1a1a2e;">Stage de 2ème année</strong>
+                <p style="font-size:0.85rem; color:#888; margin-bottom:14px;">Convention et attestation de stage SIO2</p>
+                <a href="document/Conventions Stage SIO2-1.pdf" target="_blank" class="btn" style="font-size:0.82rem; padding:8px 16px;">📄 Voir l'attestation</a>
+            </div>
+
         </div>
     </div>
 
-    <div class="info-block" style="margin-top:30px;">
-        <h3>Tableau des compétences</h3>
-        <p>Ajoutez ici un tableau récapitulatif des compétences couvertes par vos situations professionnelles,
-           en lien avec le référentiel du BTS SIO (SLAM ou SISR). Vous pouvez y indiquer les blocs de compétences
-           validés et les livrables associés.</p>
-    </div>
 </div>
 
 <footer>
     <p>© 2025 Mon Portfolio &mdash; Tous droits réservés &mdash; <a href="mailto:bouardmathis@gmail.com">bouardmathis@gmail.com</a></p>
 </footer>
+
 </body>
 </html>
